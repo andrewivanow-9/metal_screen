@@ -1,15 +1,1 @@
-name: Пример автоматизации
 
-on:
-  schedule:
-    - cron: '0 12 * * *' # Запуск каждый день в 12:00 UTC
-  workflow_dispatch:      # Можно запустить вручную
-
-jobs:
-  example_job:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Показать дату и время
-        run: date
-      - name: Показать приветствие
-        run: echo "Привет! Это твой первый workflow на GitHub Actions."
